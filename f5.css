@@ -1,0 +1,11 @@
+html, body {
+  width: 100px;
+}
+
+#input-delay {
+  width: 90%;
+}
+
+#btn-add, #btn-remove {
+  width: 100%;
+}
