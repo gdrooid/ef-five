@@ -1,9 +1,11 @@
 html, body {
-  width: 100px;
+  width: 120px;
 }
 
 #input-delay {
-  width: 90%;
+  width: 100px;
+  display: block;
+  margin: auto auto 10px auto;
 }
 
 #btn-add, #btn-remove {

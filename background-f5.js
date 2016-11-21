@@ -36,3 +36,11 @@ browser.runtime.onMessage.addListener((msg, _, sendResponse) => {
       break;
   }
 });
+
+browser.tabs.onActivated.addListener((info) => {
+  var green = info.tabId in tabs ? '-green' : '';
+
+  browser.browserAction.setIcon({
+    path: `icons/reload${green}-48.png`
+  });
+});

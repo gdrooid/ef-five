@@ -30,12 +30,18 @@ function elem(id) {
 }
 
 function showReloading() {
+  browser.browserAction.setIcon({
+    path: 'icons/reload-green-48.png'
+  });
   elem('input-delay').style.display = 'none';
   elem('btn-add').style.display = 'none';
   elem('btn-remove').style.display = '';
 }
 
 function showNotReloading() {
+  browser.browserAction.setIcon({
+    path: 'icons/reload-48.png'
+  });
   elem('input-delay').style.display = '';
   elem('btn-add').style.display = '';
   elem('btn-remove').style.display = 'none';
